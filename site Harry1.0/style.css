@@ -16,6 +16,7 @@ body{
    background-size: 100%;
    background-repeat:repeat;
    text-align: center;
+   margin: 0px;
    
 
 }
@@ -67,7 +68,7 @@ body{
    height: auto;
    padding: 40px;
    background:black;
-   position: absolute;
+   position:relative;
    background-attachment:fixed;
    background-size: 100%;
    background-repeat:no-repeat;
@@ -89,8 +90,8 @@ body{
    width: 100%;
    height: 100px;
    margin: 0px;
-   padding: 0px;
-   background:black;
+   padding: 10px;
+   background:black ;
    background-attachment:fixed;
    background-size: 100%;
    background-repeat:repeat;
@@ -102,11 +103,9 @@ body{
 #menu  ul li{
 display: inline;
 margin: 0px 10x 0px;
-
-
-
 }
-#menu ul li a1{
+
+#menu ul li a{
 text-align: center;
 margin: 0px !important;
 text-align: center;
@@ -118,22 +117,31 @@ text-decoration: none;
 
 }
 
-#menu ul li a1:hover{
+#menu ul li a:hover{
 color: red;
 }
 
-   h1, li {
+   h1, li{
        font-family:harry p;
-       font-size:60;
+       font-size:60px;
        opacity: none;
        color: white;
        text-align: center; 
    }
-   th H1 {
-       font-family:harry p;
-       font-size:100;
-
+   .h2{
+      font-family:harry p;
+      font-size:60px;
+      opacity: none;
+      color: white;
+      text-align: left; 
    }
+       .h7 {
+         font-family:arial;
+         font-size:24px;
+         opacity: none;
+         color: white;
+         text-align: center;
+       }
 
 
    .a1{
@@ -149,8 +157,7 @@ color: red;
    font-size: 15px;
 }
    
-#textoBox
-{
+#textoBox{
    position:absolute;
    top:50%;
    left:50%;
@@ -162,39 +169,54 @@ color: red;
    background: #fff;
 }
 
+#fundadores ul{
+   width:220px; 
+   height:635px;
+   margin: 0px;
+   padding: 0px;
+   background-attachment:fixed;
+   background-size: 100%;
+   background-repeat:no-repeat;
+   text-align: center;
+   list-style: none;
+}
+
+#fundadores ul li{
+margin: 0px 10x 0px;
+}
+
 .img{
    background-image: url(logo.png);
    width: 106px;
    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    padding:40px;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   padding:15px;
    right: 100px;
    margin: 0px;
-   padding: 15px;
    padding-left:769px;
    background-size: 0%;
    background-attachment:fixed;
    background-repeat:no-repeat;
 }
-
+.img-fundadores{
+   width: 150px;
+   height: 100px;
+}
 .botao{
    position: relative;
-   background-attachment:fixed;
-   background-repeat:no-repeat;
-   left: 324px;
-   width: 256px;
+   float: right;
+   margin-top:-90px;
+   width: 218px;
    display: flex;
-    flex-direction: row;
-    padding:40px;
+    padding:10px;
    right: 100px;
    font-family: arial;
    font-size: 20px;
    text-transform: uppercase;
    font-weight: 700;
    border: none;
-   padding: 10px;
    cursor:url(v.cur),auto;
    background: yellow;
    
@@ -210,7 +232,6 @@ color: red;
    position: relative;
    top: 5px;
    box-shadow: none;
-   
 }
 
 .botao a{
@@ -222,6 +243,7 @@ a{
    text-decoration: none;
        color: red;
 }
+
 .loginBox
 {
    position:absolute;
@@ -237,8 +259,6 @@ a{
    
 }
 
-
-
 h2
 {
    margin:0;
@@ -247,8 +267,6 @@ h2
    text-align:center;
    font-family: fontha
 } 
-
-
 
 .loginBox p
 {
