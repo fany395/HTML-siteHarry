@@ -1,82 +1,102 @@
- body{
-     background-color: black;
-    margin: 0px;
-    background-image:url(h.jpg);
-    background-attachment:fixed;
-    background-size: 100%;
-    background-repeat:no-repeat;
-    cursor:url(v.cur),auto;
- }
+body{
+    background-color: black;
+   margin: 0px;
+   background-image:url(h.jpg);
+   background-attachment:fixed;
+   background-size: 100%;
+   background-repeat:no-repeat;
+   cursor:url(v.cur),auto;
+}
 
- #cabeçalho{
-    width: 100%;
-    height:150px;
-    background:black;
-    background-attachment:fixed;
-    background-size: 100%;
-    background-repeat:repeat;
-    text-align: center;
-    
- 
+#cabeçalho{
+   width: 100%;
+   height:150px;
+   background:black;
+   background-attachment:fixed;
+   background-size: 100%;
+   background-repeat:repeat;
+   text-align: center;
+   
+
 }
 
 
 #interface{
-    width: 100%;
-    height:100%;
-    margin: 0px 0px 0px 0px;
-    background-attachment:fixed;
-    background-size: 100%;
-    background-repeat:repeat;
-}
- #container{
-   
-   width: 80%;
+   width: 100%;
    height:100%;
-   right:180px;
-   position: absolute;
-   background:black;
-   opacity: 0.3;
+   margin: 0px 0px 0px 0px;
    background-attachment:fixed;
    background-size: 100%;
-   background-repeat:no-repeat;
-   text-align: center;
-     
- }
-
- #rodape{
-    width: 100%;
-    height: 115px;
-    margin: auto;
+   background-repeat:repeat;
+   position: relative;
+   
+}
+#container{
+    width: 80%;
+    height:100%;
+    right:180px;
     background:black;
     background-attachment:fixed;
     background-size: 100%;
     background-repeat:no-repeat;
-    text-align: center;
-    list-style: none;
+    position: absolute;
+    opacity: .5;
+    filter: alpha(opacity=50);
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=50)";
+     filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    
 }
- #all{
-     background:white;
-     width:280;
-     height: 360;
-     position:relative;
-     background-attachment:fixed;
-     background-size: 100%;
-     background-repeat:no-repeat;
-     text-align: center;
-             }
-
-#menu ul{
-    width: 100%;
-    height: 100px;
-    margin: 0px;
-    padding: 0px;
-    background:black;
+#texto{
+    width: 80%;
+    height:100%;
+    right:180px;
     background-attachment:fixed;
     background-size: 100%;
-    background-repeat:repeat;
-    text-align: center;
-    list-style: none;
+    background-repeat:no-repeat;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size:30px;
+    color:white;
+    text-align: justify; 
+    opacity: none;
+    text-indent: 40px;
+    position: absolute;
+}
+
+#rodape{
+   width: 100%;
+   height: auto;
+   padding: 40px;
+   background:black;
+   position: absolute;
+   background-attachment:fixed;
+   background-size: 100%;
+   background-repeat:no-repeat;
+   text-align: center;
+   list-style: none;
+}
+#all{
+    width: 100vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+    box-sizing: border-box;
+}
+
+#menu ul{
+   width: 100%;
+   height: 100px;
+   margin: 0px;
+   padding: 0px;
+   background:black;
+   background-attachment:fixed;
+   background-size: 100%;
+   background-repeat:repeat;
+   text-align: center;
+   list-style: none;
+   cursor: pointer;
 }
 
 #menu  ul li{
@@ -88,10 +108,9 @@ margin: 0px 10x 0px;
 }
 #menu ul li a1{
 text-align: center;
-font: fontHarry;
 margin: 0px !important;
 text-align: center;
-padding: 10px 35px;
+padding: 28px 65px;
 display: inline-block;
 color: white;
 position: relative;
@@ -103,190 +122,221 @@ text-decoration: none;
 color: red;
 }
 
-    h1, li {
-        font-family:harry p;
-        font-size:60
-    }
-    th H1 {
-        font-family:harry p;
-        font-size:100
-    }
+   h1, li {
+       font-family:harry p;
+       font-size:60;
+       opacity: none;
+       color: white;
+       text-align: center; 
+   }
+   th H1 {
+       font-family:harry p;
+       font-size:100;
+
+   }
 
 
-    .a1{
-        text-decoration: none;
-        color: red;
-    }
-p{
-    font-family:arial;
-    font-size:23px;
-    color: white;
+   .a1{
+       text-decoration: none;
+       color: red;
+   }
+
+.p1{
+   color: white;
+   text-align: center; 
+   opacity: none;
+   font-family: arial;
+   font-size: 15px;
+}
+   
+#textoBox
+{
+   position:absolute;
+   top:50%;
+   left:50%;
+   transform: translate(-50%, -50%);
+   width:80%;
+   height:100%;
+   padding:0px;
+   box-sizing: border-box;
+   background: #fff;
 }
 
 .img{
-    background-image: url(logo.png);
-    width: 106px;
-    right: 100px;
-    margin: 0px;
-    padding: 15px;
-    padding-left: 180px;
-    background-size: 0%;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
+   background-image: url(logo.png);
+   width: 106px;
+   display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding:40px;
+   right: 100px;
+   margin: 0px;
+   padding: 15px;
+   padding-left:769px;
+   background-size: 0%;
+   background-attachment:fixed;
+   background-repeat:no-repeat;
 }
 
 .botao{
-    position: relative;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    left: 450px;
-    font-family: arial;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    border: none;
-    padding: 10px;
-    cursor:url(v.cur),auto;
-    background: yellow;
-    
+   position: relative;
+   background-attachment:fixed;
+   background-repeat:no-repeat;
+   left: 324px;
+   width: 256px;
+   display: flex;
+    flex-direction: row;
+    padding:40px;
+   right: 100px;
+   font-family: arial;
+   font-size: 20px;
+   text-transform: uppercase;
+   font-weight: 700;
+   border: none;
+   padding: 10px;
+   cursor:url(v.cur),auto;
+   background: yellow;
+   
 }
 .botao:hover{
-    text-decoration: none;
-    background: red;
-    box-shadow: 0 5px 0;
-   
+   text-decoration: none;
+   background: red;
+   box-shadow: 0 5px 0;
+  
 }
 
 .botao:active{
-    position: relative;
-    top: 5px;
-    box-shadow: none;
-    
+   position: relative;
+   top: 5px;
+   box-shadow: none;
+   
 }
 
 .botao a{
-    text-decoration: none;
-    color:black;
+   text-decoration: none;
+   color:black;
 }
 
 a{
-    text-decoration: none;
-        color: red;
+   text-decoration: none;
+       color: red;
 }
 .loginBox
 {
-	position:absolute;
-	top:50%;
-	left:50%;
-	transform: translate(-50%, -50%);
-	width:350px;
-	height:420px;
-	padding:80px 40px;
-	box-sizing: border-box;
-	background:rgba(0,0,0,0.5) ;
-	
+   position:absolute;
+   top:37%;
+   left:50%;
+   margin: 40px, 0px, 0px 0px;
+   transform: translate(-50%, -50%);
+   width:350px;
+   height:420px;
+   padding:80px 40px;
+   box-sizing: border-box;
+   background:rgba(211,211,211, 0.3);
+   
 }
 
 
 
 h2
 {
-	margin:0;
-	padding:0 0 20px;
-	color:black;
-	text-align:center;
-    font-family: fontha
+   margin:0;
+   padding:0 0 20px;
+   color:black;
+   text-align:center;
+   font-family: fontha
 } 
 
 
 
 .loginBox p
 {
-	padding:0;
-	margin:0;
-	font-weight:bold;
-	color:#fff;
-	
+   padding:0;
+   margin:0;
+   font-weight:bold;
+   color:#fff;
+   
 } 
 
 
 .loginBox input
 {
-	width:100%;
-	margin-bottom: 20px; 
+   width:100%;
+   margin-bottom: 20px; 
 }
 
 .loginBox input[type="text"], .loginBox input[type="password"]
 {
-	border: none;
-	border-bottom: 1px solid #fff;
-	background: transparent;
-	outline:none;
-	height:40px;
-	color:#fff;
-	font-size: 16px;
-    cursor:url(v.cur),auto;
-	
-	
+   border: none;
+   border-bottom: 1px solid #fff;
+   background: transparent;
+   outline:none;
+   height:40px;
+   color:#fff;
+   font-size: 16px;
+   cursor:url(v.cur),auto;
+   
+   
 }
 
 .loginBox a
 {
-	color: #fff;
-	font-size:14px;
-	font-weight:bold;
+   color: #fff;
+   font-size:14px;
+   font-weight:bold;
 } 
 
 
 ::placeholder
 {
-	color:rgba(255,255,255,0.5); 
+   color:rgba(255,255,255,0.5); 
 }
 
 
 .user
 {
-	width:100px;
-	height:100px; 
-	overflow:hidden;
-	position:absolute;
-	top:calc(-100px/2);
-	left:calc(50% - 50px);
-	border-radius:50%;
+   width:100px;
+   height:100px; 
+   overflow:hidden;
+   position:absolute;
+   top:calc(-100px/2);
+   left:calc(50% - 50px);
+   border-radius:50%;
 }
- .botao1{
-    position: relative;
-    background-attachment:fixed;
-    background-repeat:no-repeat;
-    width:10px;
-	height:40px;
-    margin: 0px 0px 5px;
-    font-family: arial;
-    font-size: 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    border: none;
-    padding: 0px;
-    cursor:url(v.cur),auto;
-    background: yellow;
-    
+.botao1{
+   position: relative;
+   background-attachment:fixed;
+   background-repeat:no-repeat;
+   width:10px;
+   height:40px;
+   margin: 0px 0px 5px;
+   font-family: arial;
+   font-size: 20px;
+   text-transform: uppercase;
+   font-weight: 700;
+   border: none;
+   padding: 0px;
+   cursor:url(v.cur),auto;
+   background: yellow;
+   
 }
 .botao1:hover{
-    text-decoration: none;
-    background: red;
-    box-shadow: 0 5px 0;
-   
+   text-decoration: none;
+   background: red;
+   box-shadow: 0 5px 0;
+  
 }
 
 .botao1:active{
-    position: relative;
-    top: 5px;
-    box-shadow: none;
-    
+   position: relative;
+   top: 5px;
+   box-shadow: none;
+   
 }
 
 .botao1 a{
-    text-decoration: none;
-    color:black;
+   text-decoration: none;
+   color:black;
 }
 
