@@ -13,45 +13,60 @@
     <link rel="icon" href="midia/logo.png">
 </head>
 <body>
-<header class="cabecalho">
-<a href="index.html"><h1 class="logo">Hogwarts</h1></a>
-<button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
-<nav class="menu">
-    <a class="btn-close"><i class="fa fa-times"></i></a>
-    <ul>
-        <li> <a href="index.html">Início</a></li>
-        <li> <a href="cursos.html">Cursos</a></li>
-        <li><a href="história.html">História</a></li>
-        <li> <a href="login.html">Portal do aluno</a></li>
-        
-</ul>
-</nav>
 
-</header>
+        <header class="cabecalho">
+                <a href="index.html"><h1 class="logo">Hogwarts</h1></a>
+                <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+                <nav class="menu">
+                    <a class="btn-close"><i class="fa fa-times"></i></a>
+                    <ul>
+                        <li> <a href="index.html">Início</a></li>
+                        <li> <a href="cursos.html">Cursos</a></li>
+                        <li><a href="história.html">História</a></li>
+                        <li> <a href="login.html">Portal do aluno</a></li>
+                        
+                </ul>
+                </nav>
+                
+                </header>
     <div class="box">
         <article class="fundo">
-            
-               <div class="inner">
-                   <div class="loginBox">
-                         <h2>Login</h2>
-		            <form class= "formulario">
-                       
-                        <p>Email</p>
-                        <input type="text" name = "" placeholder=" Email">
-                        <p>Password</p>
-                        <input type="password" name = "" placeholder="Senha">
-                        <div class="buttons">
-        <button class="btn-login">ENTRAR<i class=" fa fa-arrow-circle-right"></i></button>
-        </div>
-               <p>OU</p>
-                        <div class="buttons">
-        <button class="btn-login">CADASTRE-SE<i class=" fa fa-arrow-circle-right"></i></button>
-        </div>
-                    </form>
-                     </div>
-                    </div>
+                <div class="loginBox">  
+                                     <h2>Login</h2>
+                                <form>
+                                    <p>Email</p>
+                                    <input type="text" name = "" placeholder=" Email">
+                                    <p>Password</p>
+                                    <input type="password" name = "" placeholder="Senha">
+                                    <input type="submit" class = "btn" value="Entrar">
+                                    <p>OU</p>
+                                    <input type="submit" class = "btn" value="Cadastre-se">
+                                    
+                                </form>
+                                 </div>
+                        
             </article>
-    </div>
-        
+        </div>
+   
+
+    <footer class="rodape">
+            <div class="social-icons">
+                <a href="#"> <i class="fa fa-facebook"></i></a>
+                <a href="#"> <i class="fa fa-instagram"></i></a>
+                <a href="#"> <i class="fa fa-whatsapp"></i></a>
+            </div>
+                <p class="copyright">copyright © Hogwarts 2019. Todos os direitos reservados</p>
+        </footer> 
+    <script src="http://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script>
+        $(".btn-menu").click(function(){
+           $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+           $(".menu").hide();
+        });
+       </script> 
+    </body>
+</html>
             
     

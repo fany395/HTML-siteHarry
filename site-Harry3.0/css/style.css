@@ -8,13 +8,6 @@
     box-sizing: border-box;
     
 }
-body{
-    background-image:url(../midia/h.jpg);
-    cursor:url(../midia/v.cur),auto;
-    background-attachment:fixed;
-   background-size: 100%;
-   background-repeat:no-repeat;
-}
 a{
     font-family:harry p;
     text-decoration: none;
@@ -165,6 +158,11 @@ img{
      float: left;
      padding: 0 10%;
     cursor: pointer;
+    background-image:url(../midia/h.jpg);
+    cursor:url(../midia/v.cur),auto;
+    background-attachment:fixed;
+   background-size: 100%;
+   background-repeat:no-repeat;
  }
  .fundo{
     width: 100%;
@@ -173,7 +171,8 @@ img{
      margin: 3px 0px 3px 0px;
      margin-bottom: 4px;
      padding: 2% 3%;
-     background-color: black;
+     background: black no-repeat fixed;
+     cursor: pointer;
      
  }
  .fundo img{
@@ -208,6 +207,7 @@ img{
  /*RODAPE*/
  .rodape{
     width: 100%;
+    height: 100%;
     float: left;
     padding: 1% 2%;
     background: white;
@@ -253,63 +253,38 @@ img{
 
 
 /*LOGIN*/
-.formulario{
-    width: 100%;
-     float: left;
-     padding:  19px 142px; 
- }
- .formulario h2{
-     font-size: 45px;
-     color:yellow;
-     text-align: center;
 
- }
- .formulario p{
-     margin-top: 2%;
-     color: white;
-     text-align: center;
-     font-weight: 700;
-     font-size: 25px;
- }
- .btn-login{
-     width: 100%;
-     font-size: 1.5em;
-     text-align: center;
-     font-weight: 700;
-     cursor:url(../midia/v.cur),auto;
-     padding: 2%;
-     border-radius:  10px;
-     background: yellow;
- }
- .btn-login:hover{
-    color: red; 
- }
-loginBox
-{
-	position:absolute;
-	top:50%;
+.loginBox{
+    position: relative;
 	left:50%;
-	transform: translate(-50%, -50%);
+	transform: translate(-50%, 0%);
 	width:350px;
-	height:420px;
-	padding:80px 40px;
+	padding: 2px 80px 40px;
 	box-sizing: border-box;
-	background:rgba(0,0,0,0.5) ;
-	
+    background:rgba(231, 227, 227, 0.527) ;
+    cursor:url(../midia/v.cur),auto;
 }
 
-.loginBox p
-{
-	padding:3px;
-	margin:0;
-	font-weight:bold;
-	color:#fff;
+.loginBox p{
+	padding: 3px 0px 4px;
+    margin:0;
+    text-align: center;
+    font-weight:bold;
+    color:#fff;
+    cursor:url(../midia/v.cur),auto;
 	
 } 
+ .loginBox h2{
+    font-size: 51px;
+    color: yellow;
+    padding: 2px 0px 8px;
+    text-align: center;
+    font-family: Harry p;
+
+}
 
 
-.loginBox input
-{
+.loginBox input{
 	width:100%;
 	margin-bottom: 20px; 
 }
@@ -323,12 +298,12 @@ loginBox
 	height:40px;
 	color:#fff;
 	font-size: 16px;
-  cursor:pointer;
+    cursor:url(../midia/v.cur),auto;
 	
 }
 ::placeholder
 {
-	color:rgba(255,255,255,0.5); 
+	color:rgba(17, 16, 16, 0.829); 
 }
  /*NOVOS TAMANHOS DE TELA*/
 
@@ -381,7 +356,7 @@ text-decoration: none;
      
 }
 
- @media screen and ( min-width: 800px){
+ @media screen and ( min-width: 750px){
       .logo{
     width: 105px;
     height: 106px;
@@ -429,4 +404,27 @@ text-decoration: none;
          color: red;
 }
      
+}
+@media screen and ( min-width: 900px){
+    .btn{
+        width: 15em;
+        font-size: 1.5em;
+        text-align: center;
+        font-weight: 700;
+        cursor:url(../midia/v.cur),auto;
+        padding: 2%;
+        border-radius:  10px;
+        background: yellow;
+    }
+    .btn-cursos{
+        float: right;
+        margin: 0px 3px 6px 12px;
+        width: 20em;
+        text-align: center;
+        font-weight: 700;
+        cursor:url(../midia/v.cur),auto;
+        padding: 2%;
+        border-radius:10px;
+        background: yellow;
+    }
 }
